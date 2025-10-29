@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Four Seasons Lemonade",
+    "category": "Lemonades",
+    "price": 129.00,
+    "image": "img/foursea.png",
+    "description": "Citrus medley with tangy passionfruit, honey, and fresh lemon."
+  },
+  {
+    "id": 2,
+    "name": "Blue Lemonade",
+    "category": "Lemonades",
+    "price": 119.00,
+    "image": "img/bluelemon.png",
+    "description": "Vibrant azure lemonade with butterfly pea and zesty lime."
+  },
+  {
+    "id": 3,
+    "name": "Classic Pearl Tea (House Blend)",
+    "category": "Milk Tea",
+    "price": 139.00,
+    "image": "img/pearltea.png",
+    "description": "Signature house-blend milk tea with chewy tapioca pearls."
+  },
+  {
+    "id": 4,
+    "name": "Iced Strawberry Choco",
+    "category": "Fruit Drinks",
+    "price": 139.00,
+    "image": "img/starwberry.png",
+    "description": "Sweet strawberry blend with chocolate ribbons and ice."
+  },
+  {
+    "id": 5,
+    "name": "Classic Pearl Milk Tea",
+    "category": "Milk Tea",
+    "price": 129.00,
+    "image": "img/classic.png",
+    "description": "Robust black tea, creamy milk, and chewy pearls."
+  },
+  {
+    "id": 6,
+    "name": "Lychee Fruit Tea",
+    "category": "Fruit Drinks",
+    "price": 129.00,
+    "image": "img/lychee.png",
+    "description": "Refreshing lychee fruit blend with a hint of jasmine tea."
+  },
+  {
+    "id": 7,
+    "name": "Cookies & Cream Milk Tea",
+    "category": "Specials",
+    "price": 159.00,
+    "image": "img/cookies.png",
+    "description": "Rich milk tea with crushed cookies and cream foam."
+  },
+  {
+    "id": 8,
+    "name": "Caramel Macchiato",
+    "category": "Coffee",
+    "price": 149.00,
+    "image": "img/redvelvet.png",
+    "description": "Creamy espresso, steamed milk, and caramel drizzle."
+  }
+]

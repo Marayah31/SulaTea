@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SULATEA Social Media Hub</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+
+  :root {
+    --primary: #009DFF;      
+    --primary-hover: #007ACC; 
+    --secondary: #FF4B4B;     
+    --tertiary: #F5CBA7;     
+    --dark-text: #2C1E17; 
+    --light-bg: #FFFFFF;      
+    --gray-bg: #F7F7F7;      
+  }
+
+  body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    background-color: var(--gray-bg);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .header {
+    background-color: var(--light-bg);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark-text);
+  }
+  .header .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  .header .nav-links a:hover {
+    color: var(--secondary);
+  }
+
+  .social-hub-container {
+    flex-grow: 1;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .social-hub-container h1 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 40px;
+    font-size: 2.5em;
+  }
+
+  .social-app-section {
+    margin-bottom: 50px;
+    padding-top: 20px;
+  }
+  .social-app-section:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+  }
+  .social-app-section h2 {
+    font-size: 2em;
+    color: var(--dark-text);
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .social-app-section h2 i {
+    margin-right: 15px;
+    font-size: 1.2em;
+  }
+  .social-app-section .content {
+    background-color: var(--tertiary);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 40px;
+  }
+  .social-app-section .content p {
+    line-height: 1.6;
+    color: var(--dark-text);
+  }
+  .social-app-section .content .feed-placeholder {
+    background-color: var(--gray-bg);
+    border: 1px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    color: #888;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-style: italic;
+  }
+
+  .profile-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 400; 
+    transition: background-color 0.3s ease;
+  }
+  .profile-link:hover {
+    background-color: var(--primary-hover);
+  }
+
+  .fa-facebook-f { color: #3b5998; }
+  .fa-twitter { color: #00acee; }
+  .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.footer {
+  background-color: var(--tertiary);
+  color: var(--dark-text);
+  padding: 60px 15px;
+  box-shadow: var(--shadow);
+}
+
+.footer h6 {
+  color: var(--dark-text);
+}
+
+.footer p,
+.footer a {
+  color: var(--dark-text);
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--secondary);
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">SULATEA</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a> 
+    </div>
+  </div>
+
+  <div class="social-hub-container">
+    <h1>SULATEA Social Media Hub</h1>
+    <p style="text-align:center; margin-bottom:50px; font-size:1.1em; color:#666;">
+      All your favorite SULATEA social feeds in one place!
+    </p>
+
+    <div id="facebook" class="social-app-section">
+      <h2><i class="fab fa-facebook-f"></i> SULATEA on Facebook</h2>
+      <div class="content">
+        <p>Stay up-to-date with our latest news, special offers, and community events.</p>
+        <div class="feed-placeholder">
+          [Simulated Facebook Feed]
+        </div>
+        <a href="#" class="profile-link">Visit our Facebook Page <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+    <div id="twitter" class="social-app-section">
+      <h2><i class="fab fa-twitter"></i> SULATEA on Twitter</h2>
+      <div class="content">
+        <p>Catch our latest tweets, quick announcements, and fun interactions.</p>
+        <div class="feed-placeholder">
+          [Simulated Twitter Feed]
+        </div>
+        <a href="#" class="profile-link" style="background-color: #FF4B4B;">Follow us on Twitter <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+
+    <div id="instagram" class="social-app-section">
+      <h2><i class="fab fa-instagram"></i> SULATEA on Instagram</h2>
+      <div class="content">
+        <p>Visually feast on our stunning drink photography and behind-the-scenes glimpses.</p>
+        <div class="feed-placeholder">
+          [Simulated Instagram Grid]
+        </div>
+        <a href="#" class="profile-link" style="background: linear-gradient(45deg, #fdf497 0%, #fd5949 33%, #d6249f 66%, #285AEB 100%);">
+          See us on Instagram <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="footer bg-light text-dark py-5 mt-5">
+  <div class="container">
+    <div class="row gy-4 text-center text-md-start">
+      
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold mb-3">© 2020 Sulatea. All rights reserved.</h6>
+        <p class="small text-muted">
+          Sulatea offers refreshing milk teas, lemonades, and tropical drinks brewed with care and served with passion.
+        </p>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-5 mt-3">
+          <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold mb-3">Support</h6>
+        <div class="d-flex flex-column gap-2">
+          <a href="contact.html" class="btn btn-outline-dark btn-sm w-auto mx-auto mx-md-0">Contact</a>
+          <a href="#" class="btn btn-outline-dark btn-sm w-auto mx-auto mx-md-0">Terms of Use</a>
+          <a href="about.html" class="btn btn-outline-dark btn-sm w-auto mx-auto mx-md-0">About Us</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold mb-3">View Guides</h6>
+        <ul class="list-unstyled small">
+          <li><a href="about.html" class="text-dark text-decoration-none">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold mb-3">Contact</h6>
+        <p class="small mb-1">📍 Sulatea Café, Mandaue City, Philippines</p>
+        <p class="small mb-1">📞 (02) 555-1234</p>
+        <p class="small mb-0">✉️ sulatea@yahoo.com</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>

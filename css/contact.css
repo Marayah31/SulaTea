@@ -1,0 +1,122 @@
+:root {
+  --primary: #009DFF;
+  --primary-hover: #007ACC;
+  --secondary: #FF4B4B;
+  --tertiary: #F5CBA7;
+  --dark-text: #2C1E17;
+  --light-bg: #FFFFFF;
+  --gray-bg: #F7F7F7;
+  --shadow: 0 4px 10px rgba(44,30,23,0.08);
+  --font-base: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: var(--light-bg);
+  box-shadow: var(--shadow);
+}
+
+.navbar-brand .brand-name {
+  color: var(--dark-text);
+}
+
+.navbar-nav .nav-link {
+  color: var(--dark-text);
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+section.py-5 {
+  background-color: var(--gray-bg);
+  padding: 60px 15px;
+  text-align: center;
+}
+
+section.py-5 h2.fw-bold {
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+section.py-5 p.lead {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+#contactForm {
+  background-color: var(--light-bg);
+  border-radius: 18px;
+  padding: 30px 20px;
+  box-shadow: var(--shadow);
+}
+
+#contactForm .form-control {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(0, 157, 255, 0.25);
+}
+
+#contactForm button.btn-primary {
+  background-color: var(--primary);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.footer {
+  background-color: var(--tertiary);
+  color: var(--dark-text);
+  box-shadow: var(--shadow);
+}
+
+.footer a {
+  color: var(--dark-text);
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--secondary);
+}
+
+a.text-facebook { color: var(--primary); }
+a.text-twitter { color: var(--primary-hover); }
+a.text-instagram { color: var(--secondary); }
+
+a.text-facebook:hover { color: #007ACC; }
+a.text-twitter:hover { color: #005ea0; }
+a.text-instagram:hover { color: #be179a; }
+
+section.py-5 p small,
+footer p.small,
+footer .text-muted {
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  #contactForm {
+    padding: 20px 15px;
+  }
+}
